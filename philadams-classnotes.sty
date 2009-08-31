@@ -1,0 +1,36 @@
+% Class Notes Styles
+% Phil Adams (http://philadams.net)
+% last updated 08/31/2009
+
+% usepackages
+\usepackage[utf8]{inputenc}
+\usepackage{fullpage}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{latexsym}
+\usepackage{listings}
+\usepackage{ifpdf}
+\ifpdf
+\usepackage[pdftex]{graphicx}
+\else
+\usepackage{graphicx} \fi
+\usepackage{enumitem}
+\usepackage[lined,boxed]{algorithm2e} % algorithm package
+\usepackage{fontspec} % easy access to system fonts (xelatex)
+
+% lists have too much vertical space involved by default
+\setlist{nolistsep}
+
+% font config (requires xelatex!) \setmainfont[BoldFont={Arial Black},
+% ItalicFont={Hoefler Text Italic}]{Georgia}
+\setmainfont{Cochin}% Cochin, Optima
+\setsansfont{Optima}
+\setmonofont[Scale=0.8]{Andale Mono} % Monaco, Andale Mono
+
+% paragraph customization
+\setlength{\parindent}{0pt} % stop paragraph first lines indenting
+\setlength{\parskip}{12pt plus 6pt minus 6pt}
+% \newcommand{\collaborators}{\emph{Student collaborators: someone (ccb35) and
+% someone else (sjt33).}}
+
+\typeout{--- Phil Adams Class Notes Styles ---}
