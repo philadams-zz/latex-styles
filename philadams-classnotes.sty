@@ -14,7 +14,8 @@
 \usepackage[pdftex]{graphicx}
 \else
 \usepackage{graphicx} \fi
-\usepackage{enumitem}
+\usepackage{enumitem} % make latex lists more compact
+\usepackage{hyperref} % sidebar ToC; easy urls and links
 \usepackage[lined,boxed]{algorithm2e} % algorithm package
 \usepackage{fontspec} % easy access to system fonts (xelatex)
 
@@ -23,7 +24,8 @@
 
 % font config (requires xelatex!) \setmainfont[BoldFont={Arial Black},
 % ItalicFont={Hoefler Text Italic}]{Georgia}
-\setmainfont{Cochin}% Cochin, Optima
+% Cochin, Hiragino Mincho Pro, TeX Gyre Termes
+\setmainfont{TeX Gyre Termes}
 \setsansfont{Optima}
 \setmonofont[Scale=0.8]{Andale Mono} % Monaco, Andale Mono
 
@@ -33,4 +35,16 @@
 % \newcommand{\collaborators}{\emph{Student collaborators: someone (ccb35) and
 % someone else (sjt33).}}
 
-\typeout{--- Phil Adams Class Notes Styles ---}
+% shouldn't have to go to math to get super|sub script!
+% \newcommand{\superscript}[1]{\ensuremath{^{\textrm{#1}}}}
+% \newcommand{\subscript}[1]{\ensuremath{_{\textrm{#1}}}}
+% \newcommand{\nth}[0]{\superscript{th}}
+% \newcommand{\st}[0]{\superscript{st}}
+% \newcommand{\nd}[0]{\superscript{nd}}
+% \newcommand{\rd}[0]{\superscript{rd}}
+
+% and... we're done
+\typeout{********************************************************}
+\typeout{Phil Adams Class Notes Styles}
+\typeout{- http://philadams.net}
+\typeout{********************************************************}
