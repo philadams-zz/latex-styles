@@ -1,0 +1,9 @@
+Personal LaTeX styles.
+Phil Adams (http://philadams.net) 2010
+
+Installing
+----------
+
+- Symlink to <texmf-local>/tex/latex/local
+- run 'mktexlsr' to rebuild tex ls-R databases
+- include as packages in LaTeX document
